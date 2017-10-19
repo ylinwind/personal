@@ -1,0 +1,33 @@
+.sider{
+    float: left;
+    height:100%;
+    background:#CDE7E6;
+    overflow: hidden;
+    position: relative;
+}
+.contWrap{
+    float: right;
+    width: 75%;
+    height: 100%;
+}
+.mainContent{
+    height: 100%;
+    background:rgba(149, 216, 247, 0.1);
+    box-shadow: 12px 12px 12px 12px lightblue;
+    margin-left: 10px;
+}
+.siderLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+}
+.siderLinks span{
+    font-size: 25px;
+    margin:8px;
+    color: #015157;
+}

@@ -1,0 +1,43 @@
+{
+  "name": "leen",
+  "version": "1.0.0",
+  "description": "react-router-demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --inline"
+  },
+  "author": "leen",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^2.13.4",
+    "antd-mobile": "^1.6.11",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.3",
+    "less-loader": "^4.0.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "file-loader": "^1.1.3",
+    "url-loader": "^0.5.9"
+  }
+}
