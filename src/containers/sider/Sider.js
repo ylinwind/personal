@@ -52,7 +52,7 @@ export default class Sider extends React.Component{
                 >
                     <SubMenu key="sub1" title={<span><Icon type="mail" /><span>Where you wanna go</span></span>}>
                         <Menu.Item key="1"><Link to="/homelist">HomeList</Link></Menu.Item>
-                        <Menu.Item key="2"><Link to="/detail">About</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to="/about">About</Link></Menu.Item>
                         <Menu.Item key="3"><Link to="/Links">links</Link></Menu.Item>
                     </SubMenu>
                 </Menu>

@@ -1,0 +1,52 @@
+.about_ImageShow_Container{
+    width:100%;
+    height: 100%;
+    border:1px solid coral;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    /* flex-wrap: wrap; */
+    position: relative;
+}
+.image_card{
+    height: 30%;
+    width: 140px;
+    position: absolute !important;
+}
+.custom-image{
+    height: 80%;
+}
+.custom-image img {
+    display: block;
+    height: 100%;
+}
+.custom-card {
+    padding: 10px 16px;
+    height: 20%;
+}
+.custom-card h3 {
+    color: #333;
+    font-size: 12px;
+}
+.custom-card p {
+    color: #999;
+    font-size: 12px;
+}
+
+/* 动画 */
+@keyframes moveAnimate
+{
+    0% {left:0;top:0}
+    25% {left:700px;top:0;}
+    50% {left:700px;top:400px;}
+    75% {left:0;top:400px;}
+    100% {top:0;top:0}
+}
+@-webkit-keyframes moveAnimate
+{
+    0% {left:0;top:0}
+    25% {left:700px;top:0;}
+    50% {left:700px;top:400px;}
+    75% {left:0;top:400px;}
+    100% {top:0;top:0}
+}

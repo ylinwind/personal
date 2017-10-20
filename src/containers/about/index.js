@@ -3,6 +3,8 @@ import { Link } from 'react-router';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionWays from '../../actions';
+//引用组件
+import ImageShow from '../../components/about/ImageShow';
 
 
 class About extends React.Component{
@@ -14,8 +16,8 @@ class About extends React.Component{
     }
     render(){
         return(
-            <div >
-              heiheih
+            <div style={{height:'100%'}}>
+              <ImageShow/>
             </div>
         )
     }
