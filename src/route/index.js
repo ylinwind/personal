@@ -6,7 +6,7 @@ import { BrowserRouter as Router ,
 import HomeList from '../containers/contList';
 import About from '../containers/about';
 import Welcome from '../containers/welcome';
-import Links from '../components/Links';
+import WorkInfo from '../containers/linksInfo/WorkInfo';
 import Sider from '../containers/sider/Sider';
 import './style.css';
 import '../css/common.css';
@@ -27,7 +27,7 @@ class Main extends React.Component{
                             <Route exact path="/" component={Welcome}/>
                             <Route path="/homelist" component={HomeList}/>
                             <Route path="/about" component={About}/>
-                            <Route path="/Links" component={Links}/>
+                            <Route path="/Links" component={WorkInfo}/>
                         </div>
                     </div>
                     

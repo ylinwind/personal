@@ -5,32 +5,12 @@ import TweenOne, { TweenOneGroup } from 'rc-tween-one';
 import Icon from 'antd/lib/icon';
 import './style.css';
 
-const textData = {
-  content: 'Taiwan called motorcycle, motor bike [1] or a motorcycle,' +
-  ' the motorcycle referred to in the mainland, Hong Kong and Southeast' +
-  ' Asia known as motorcycles.',
-  title: 'Motorcycle',
-};
-let dataArray = [
-  { image: 'https://zos.alipayobjects.com/rmsportal/DGOtoWASeguMJgV.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/BXJNKCeUSkhQoSS.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/TDIbcrKdLWVeWJM.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/SDLiKqyfBvnKMrA.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/UcVbOrSDHCLPqLG.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/QJmGZYJBRLkxFSy.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/PDiTkHViQNVHddN.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/beHtidyjUMOXbkI.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/vJcpMCTaSKSVWyH.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/dvQuFtUoRmvWLsZ.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/QqWQKvgLSJaYbpr.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/pTfNdthdsUpLPLJ.png' },
-];
-dataArray = dataArray.map(item => ({ ...item, ...textData }));
+
 class PicDetails extends React.Component {
   static propTypes = {
     className: PropTypes.string,
   };
-
+  
   static defaultProps = {
     className: 'pic-details-demo',
   };
@@ -39,6 +19,7 @@ class PicDetails extends React.Component {
     super(props);
     this.state = {
       picOpen: {},
+      datas:this.props.dataArray.map(item => ({ ...item, ...this.props.textData })),
     };
   }
 
@@ -72,7 +53,7 @@ class PicDetails extends React.Component {
   };
 
   getDelay = (e) => {
-    const i = e.index + dataArray.length % 4;
+    const i = e.index + this.state.datas.length % 4;
     return (i % 4) * 100 + Math.floor(i / 4) * 100 + 200;
   };
 
@@ -81,7 +62,7 @@ class PicDetails extends React.Component {
     const imgHeight = 76;
     const imgBoxWidth = 130;
     const imgBoxHeight = 96;
-    return dataArray.map((item, i) => {
+    return this.state.datas.map((item, i) => {
       const { image, title, content } = item;
       const isEnter = typeof this.state.picOpen[i] === 'boolean';
       const isOpen = this.state.picOpen[i];
@@ -174,15 +155,15 @@ class PicDetails extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{height:"80%"}}>
         <div className={`${this.props.className}-wrapper`}>
           <div className={this.props.className}>
             <div className={`${this.props.className}-header`}>
              
             </div>
             <QueueAnim type="bottom" className={`${this.props.className}-title`}>
-              <h1 key="h1">Motion Design</h1>
-              <p key="p">The react animation solution</p>
+              <h1 key="h1">{this.props.title}</h1>
+              <p key="p">{this.props.desc}</p>
             </QueueAnim>
             <QueueAnim
               delay={this.getDelay}

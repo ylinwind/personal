@@ -3,7 +3,7 @@
     position: relative;
     background: #DEEDCC;
     overflow: hidden;
-    height: 480px;
+    height: 100%;
   }
   
   .pic-details-demo {
@@ -11,7 +11,7 @@
     box-shadow: 0 10px 40px #C7D7B5;
     width: 80%;
     min-width: 550px;
-    height: 420px;
+    height: 90%;
     background: #fff;
     border-radius: 6px;
     overflow: hidden;
