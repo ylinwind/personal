@@ -32,6 +32,7 @@
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-swiper": "^0.1.5",
     "redux": "^3.7.2",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
@@ -42,6 +43,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "file-loader": "^1.1.3",
+    "react-swiper": "^0.1.5",
     "url-loader": "^0.5.9"
   }
 }

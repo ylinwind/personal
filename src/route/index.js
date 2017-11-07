@@ -20,11 +20,11 @@ class Main extends React.Component{
     render(){
         return(
             <Router>
-                <div style={{height:'100%'}}>
+                <div style={{height:'100%',overflow:"hidden"}}>
+                    <Route exact path="/" component={Welcome}/>
                     <Sider/>
                     <div className="contWrap">
                         <div className="mainContent">
-                            <Route exact path="/" component={Welcome}/>
                             <Route path="/homelist" component={HomeList}/>
                             <Route path="/about" component={About}/>
                             <Route path="/Links" component={WorkInfo}/>

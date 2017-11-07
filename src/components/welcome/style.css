@@ -1,0 +1,42 @@
+.Banner_container{
+    height: 100%;
+    width:100%;
+}
+.Banner_container .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.Banner_container ul{
+    height: 100%;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    /* animation:welcome_banner 5s infinite;
+    -webkit-animation:welcome_banner 5s infinite; */
+}
+.Banner_container ul li{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    float: left;
+}
+.Banner_container ul li img{
+    height: 100%;
+    width:100%;
+}
+
+/* 动画移动 */
+@keyframes welcome_banner{
+    0% {left:-100%;top:0}
+    25% {left:-200%;top:0;}
+    50% {left:-300%;top:0;}
+    75% {left:-400%;top:0;}
+    100% {top:-500%;top:0}
+}
+@-webkit-keyframes welcome_banner{
+    0% {left:-100%;top:0}
+    25% {left:-200%;top:0;}
+    50% {left:-300%;top:0;}
+    75% {left:-400%;top:0;}
+    100% {top:-500%;top:0}
+}
