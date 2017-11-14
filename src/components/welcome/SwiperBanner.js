@@ -26,9 +26,6 @@ export default class WelcomeBanne extends React.Component{
                 <div className="swiper-container" style={{height:"100%"}}>
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
-                            <img src="http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1308/15/c2/24494094_1376530595237.jpg"/>
-                        </div>
-                        <div className="swiper-slide">
                             <img src="http://abc.2008php.com/2014_Website_appreciate/2015-09-20/20150920191057.jpg"/>
                         </div>
                         <div className="swiper-slide">

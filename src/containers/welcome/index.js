@@ -6,6 +6,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionWays from '../../actions';
 
+import jQuery from 'jquery';
 import WelcomeBanne from '../../components/welcome/SwiperBanner'
 
 class Welcome extends React.Component{
@@ -18,6 +19,7 @@ class Welcome extends React.Component{
     render(){
         return(
             <div style={{height:"100%",position:"relative"}}>
+                {/* <button onClick={this.getStart}>getStart</button> */}
                 <Link to="/homelist" style={{position:"absolute",
                             zIndex:2,
                             background:"rgba(44,33,55,.5)",
@@ -32,6 +34,21 @@ class Welcome extends React.Component{
             </div>
         )
     }
+
+    getStart=()=>{
+
+        jQuery.ajax({
+            type:'get',
+            url:'http://localhost:8081/123',
+            success:function(data){
+                console.log(data);
+            },
+            error:function(){
+                console.log('error');
+            }
+            })
+    }
+    
     
 }
 

@@ -11,30 +11,30 @@ const columns = [{
     key: 'name',
     render: text => <a href="#">{text}</a>,
   }, {
-    title: 'Age',
-    dataIndex: 'age',
-    key: 'age',
+    title: 'Time',
+    dataIndex: 'time',
+    key: 'time',
   }, {
-    title: 'Address',
-    dataIndex: 'address',
-    key: 'address',
+    title: ' Brief introduction',
+    dataIndex: 'brief',
+    key: 'brief',
   }];
   
   const data = [{
     key: '1',
     name: 'John Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
+    time: 32,
+    brief: 'New York No. 1 Lake Park',
   }, {
     key: '2',
     name: 'Jim Green',
-    age: 42,
-    address: 'London No. 1 Lake Park',
+    time: 42,
+    brief: 'London No. 1 Lake Park',
   }, {
     key: '3',
     name: 'Joe Black',
-    age: 32,
-    address: 'Sidney No. 1 Lake Park',
+    time: 32,
+    brief: 'Sidney No. 1 Lake Park',
   }];
 
 class Home extends React.Component{

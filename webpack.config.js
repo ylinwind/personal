@@ -1,9 +1,9 @@
 var webpack=require('webpack');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: __dirname+'/src/index.js',
     output: {
-      // path:__dirname+'/dist',//打开后webpack-dev-server处理后入口HTML找不到bundle文件
+      path:__dirname+'/dist',//打开后webpack-dev-server处理后入口HTML找不到bundle文件
       filename: 'bundle.js',
     },
     module: {
