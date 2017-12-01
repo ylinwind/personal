@@ -1,7 +1,6 @@
 /* 外壳样式 */
 .pic-details-demo-wrapper {
     position: relative;
-    background: #DEEDCC;
     overflow: hidden;
     height: 100%;
   }
@@ -12,7 +11,7 @@
     width: 80%;
     min-width: 550px;
     height: 90%;
-    background: #fff;
+    background: transparent;
     border-radius: 6px;
     overflow: hidden;
   }

@@ -17,9 +17,15 @@ export default class Sider extends React.Component{
     }
     setModalVisible=(value)=>{
         console.log(value)
-        this.setState({
-            ModalVisible:value,
-        })
+        // this.setState({
+        //     ModalVisible:value,
+        // })
+        Modal.confirm({
+            title: '你要慎重！',
+            content: '点什么点，再点就把你吃掉~',
+            okText: '大哥好~',
+            cancelText: '不点了不点了',
+          });
     }
     render(){
         return(
@@ -30,7 +36,7 @@ export default class Sider extends React.Component{
                         lin dada
                     </span>
                 </div>
-                <Modal
+                {/* <Modal
                     title="修改个人信息"
                     wrapClassName="vertical-center-modal"
                     visible={this.state.ModalVisible}
@@ -38,7 +44,7 @@ export default class Sider extends React.Component{
                     onCancel={() => this.setModalVisible(false)}
                     >
                     <InfoForm/>
-                </Modal>
+                </Modal> */}
             </div>
             
         )

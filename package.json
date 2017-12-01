@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --inline --color",
-    "build": "webpack"
+    "start": "webpack-dev-server --config ./webpack.config.dev.js",
+    "build": "webpack --config ./webpack.config.build.js"
   },
   "author": "leen",
   "license": "ISC",
@@ -41,10 +41,26 @@
     "webpack-dev-server": "^2.9.1"
   },
   "devDependencies": {
+    "array-includes": "^3.0.3",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "brace-expansion": "^1.1.8",
+    "copy-webpack-plugin": "^4.2.3",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.3",
+    "fs": "^0.0.1-security",
+    "fs.realpath": "^1.0.0",
+    "html-webpack-plugin": "^2.30.1",
+    "inflight": "^1.0.6",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "portfinder": "^1.0.13",
+    "postcss-loader": "^2.0.9",
     "react-swiper": "^0.1.5",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.18.2",
+    "type-is": "^1.6.15",
     "url-loader": "^0.5.9"
   }
 }

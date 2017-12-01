@@ -46,7 +46,7 @@ export default class WelcomeBanne extends React.Component{
         )
     }
     componentDidMount(){
-        window.onload = function(){
+        window.onload=function(){
             var mySwiper = new Swiper ('.swiper-container', {
                 autoplay: 2000,//可选选项，自动滑动
                 // direction: 'vertical',

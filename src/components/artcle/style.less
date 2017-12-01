@@ -1,0 +1,79 @@
+.lx_artcle_top{
+    height: 10%;
+    max-height: 50px;
+    min-height: 44px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    overflow: hidden;
+    h3{
+        font-size: 21px;
+    }
+    .artcle-tags{
+        i{
+            font-size: 14px;
+            margin:0 5px;
+            color: blue;
+        }
+    }
+    .editInfo{
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        span:first-child{
+            color: red;
+        }
+        span:last-child{
+
+        }
+    }
+}
+.artcle-content{
+    height: 80%;
+    padding:10px;
+    background: rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+    position: relative;
+    .artcle-greate-point{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 100%;
+        background: #FF7256;
+        box-shadow: 0 0 2px #eee;
+        left: 58%;
+        bottom: 10%;
+        // margin-bottom: -25px;
+        margin-left: -25px;
+        cursor: pointer;
+        z-index: 2;
+        i{
+            font-size: 25px;
+            color: white;
+        }
+    }
+}
+.artcle-read-info{
+    span{
+        font-size: 16px;
+        cursor: default;
+        margin: 10px;
+        i:hover{
+            color:rgb(179, 80, 50);
+        }
+    }
+}
+// 文章列表
+.artcle-list-wrap{
+    .artcle-list{
+        .artcle-item{
+            h3{
+                color:#eee;
+            }
+            padding: 5px;
+            color: #eee;
+            background: rgba(0, 0, 0, 0.4)
+        }
+    }
+}

@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionWays from '../../actions';
 import { Table, Icon } from 'antd';
+import ArtcleList from '../../components/artcle/ArtcleList';
 
 const columns = [{
     title: 'Name',
@@ -52,6 +53,7 @@ class Home extends React.Component{
                 onRowClick={(record,index,event)=>{
                   this.props.history.push(`/detail?index=${index}`);
                 }}/>
+                <ArtcleList/>
             </div>
         )
     }

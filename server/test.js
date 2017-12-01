@@ -24,13 +24,13 @@ age:13
 }];
 
 //写个接口123
-app.get('/123',function(req,res){
+app.get('/api/123',function(req,res){
 res.status(200),
 res.json(questions)
 });
 
 //配置服务端口
-var server = app.listen(8081, function () {
+var server = app.listen(8080, function () {
 var host = server.address().address;
  var port = server.address().port;
     console.log('Example app listening at http://%s:%s', host, port);

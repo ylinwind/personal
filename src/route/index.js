@@ -8,7 +8,7 @@ import About from '../containers/about';
 import Welcome from '../containers/welcome';
 import WorkInfo from '../containers/linksInfo/WorkInfo';
 import Sider from '../containers/sider/Sider';
-import './style.css';
+import ArtcleDetail from '../containers/detail/ArtcleDetail';
 import '../css/common.css';
 class Main extends React.Component{
 
@@ -28,6 +28,7 @@ class Main extends React.Component{
                             <Route path="/homelist" component={HomeList}/>
                             <Route path="/about" component={About}/>
                             <Route path="/Links" component={WorkInfo}/>
+                            <Route path="/detail" component={ArtcleDetail}/>
                         </div>
                     </div>
                     

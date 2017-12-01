@@ -1,8 +1,11 @@
+body{
+    background: url('http://img2.niutuku.com/desk/1207/1057/ntk121845.jpg');
+}
 .sider{
     float: left;
     width:14%;
     height:100%;
-    background:#CDE7E6;
+    /* background:#CDE7E6; */
     overflow: hidden;
     position: relative;
 }
@@ -14,11 +17,11 @@
 }
 .mainContent{
     height: 100%;
-    background:rgba(149, 216, 247, 0.1);
+    /* background:rgba(149, 216, 247, 0.1); */
     box-shadow: 12px 12px 12px 12px lightblue;
     margin-left: 10px;
 }
-.siderLinks{
+.sider-links-icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +31,16 @@
     left: 0;
     bottom:0;
 }
-.siderLinks span{
+.sider-links-icon span{
     font-size: 25px;
     margin:8px;
     color: #015157;
+}
+.sider-links{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.sider-links li{
+    float: left;
 }
